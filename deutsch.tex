@@ -1,0 +1,213 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{amssymb}
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Mandy}
+\familyname{Vogel}
+% \title{Resumé title (optional)}               % optional, remove the line if not wanted
+\address{Prager Str. 137}{04317 Leipzig}    % optional, remove the line if not wanted
+\mobile{0177 2499255}                    % optional, remove the line if not wanted
+% \phone{phone (optional)}                      % optional, remove the line if not wanted
+% \fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{mandy.vogel@googlemail.com}                      % optional, remove the line if not wanted
+\homepage{https://github.com/mvogel78}                % optional, remove the line if not wanted
+% \extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt]{bildklein.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% \quote{Some quote (optional)}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+%\newcommand\myitem{\item[\textbullet]\hspace*{.5em} }
+%\newcommand\myiteml{\item[\textasciitilde]\hspace*{.5em} }
+%\newcommand\myitemp{\item[\textperiodcentered]\hspace*{.5em} }
+
+\begin{document}
+\maketitle
+
+%% \section{Personal Information}
+%% \cvline{Name}{Mandy Vogel}
+%% \cvline{Adresse}{Prager Str. 137, 04317 Leipzig}
+%% \cvline{Telefon}{0177 24 99 255}
+%% \cvline{E-Mail}{mandy.vogel@googlemail.com}
+%% \cvline{Nationalit\"at}{German}
+%% \cvline{Geb. am}{1978-12-06}
+
+
+\section{Ausbildung}
+\cventry{1999--2006}{Staatsexamen}{Universi\"at Leipzig}{Leipzig}{\textit{1.8}}{Mathematik, Geschichte}{}  % arguments 3 to 6 can be left empty
+\cventry{1997}{Abitur}{Holzlandgymnasium}{Hermsdorf}{\textit{1.3}}{}
+
+\section{Abschlussarbeit}
+\cvline{Titel}{\emph{On the mean curvature of Langrangian Surfaces}}
+\cvline{Betreuer}{Prof. Dr. Matthias Schwarz}
+%\cvline{Abstract}{\small Fl\"achen im $\mathbb{R}^3$ sind gut untersucht. Weil die Kodimension 1 betr\"agt, sind wohl erste als auch zweite Fundamentalform einfach zu berechnen. Sind Fl\"achen dagegen in h\"oherdimensionalen R\"aumen eingebettet, verkompliziert sich die Gauss-Abbildung und die zweite Fundamentalform erheblich. Schon im $\mathbb{R}^4 \cong \mathbb{C}^2$, mit der Kodimension 2 sind sie kaum mehr intuitiv erfassbar. So liegt der Zugang nah, zn\"achst Fl\"achen im $\mathbb{R}^4$ mit besonderen Eigenschaften (hier die sogenannten Lagrange Fl\"achen) zu untersuchen. Mit Werkzeugen der symplektischen Geometrie soll gezeigt werden, dass sich die Hauptkr\"ummung von Langrange-Fl\"achen im  $\mathbb{R}^4$ \"ahnlich intuitiv und einfach untersuchen l\"asst, wie die von allgemeinen Fl\"achen im $\mathbb{R}^3$.}
+\nopagebreak
+
+
+\section{Beruflicher Werdegang}
+\cventry{2012, 2015}{Freie Mitarbeit}{}{Max-Planck-Institut f\"ur Kognitions- und Neurowissenschaften, Leipzig}{}{Kurs (Introductory Statistics and Programming with R) und Beratung, Kurswiki}
+\cventry{2013--}{Freie Mitarbeit}{Universit\"at Leipzig}{Veterin\"aranatomie (Wachstum von Alpakas, Pferdehufe)}{}{Beratung, Grafiken f\"ur Publikationen}
+\cventry{seit 2009}{Wissenschaftlicher Mitarbeiter}{}{Universit\"atsmedizin Leipzig/CrescNet gGmbH}{}{Datenbankpflege, statistisches Programmieren, EU Projekte SAGhE (\href{http://saghe.aphp.fr}{http://saghe.aphp.fr}) und BetaJudo (08/2013 -01/2014 \href{http://www.betajudo.org}{http://www.betajudo.org}) \& LIFE (seit 02/2014) %
+\begin{itemize}\setlength\itemindent{6pt}
+\item Statistische Beratung von Wissenschaftlern und Doktoranden
+    \begin{itemize}\setlength\itemindent{12pt}
+    \item Einf\"uhrungskurs Statistik mit R
+    \item Individuelle Unterst\"utzung hinsichtlich Methoden und Visualisierung
+    \item Datenaufbereitung, data wrangling
+    \end{itemize}
+\item statistisches Programmieren
+  \begin{itemize}
+    \begin{itemize}
+    \item Statistische Analysen, Modellierung
+    \item Grafiken und interaktive Visualisierung (grid graphics, trellis plots, ggplot, ggvis, shiny)
+    \item Reporting tools (web server, pdf reporting)
+    \item Bayesian statistics (JAGS/BUGS)
+    \end{itemize}
+  \item Anwendungsadministration (RedCap)
+  \end{itemize}
+  \end{itemize}
+}
+\cventry{2006--2009}{Wissenschaftlicher Mitarbeiter}{}{Universit\"atsmedizin Leipzig/CrescNet gGmbH}{}{Bereich Informationsmanagement, first und second level support (telefonisch und vor Ort Betreuung), SAP, Virensoftware (Symantec), Installation und Konfiguration von Spezialsoftware (inkl. Client Server Architekturen)}{}
+\cventry{2003--2008}{Wissenschaftliche Hilfskraft}{}{Universit\"at Leipzig, Fakult\"at f\"ur Mathematik und Informatik}{}{Seminare f\"ur Studienbeginner (im Umfang von 200h)}
+\cventry{2003--2005}{Studentische Hilfskraft}{}{Universit\"at Leipzig, Erziehungswissenschaftliche Fakult\"at}{}{administrative Betreuung einer Weiterbildung f\"ur Lehrer}
+\cventry{2002--2003}{Studentische Hilfskraft}{}{Universit\"at Leipzig, Fakult\"at f\"ur Mathematik und Informatik}{}{Korrektur von \"Ubungsaufgaben und Klausuren}
+\cventry{2005--2010}{Therapeut f\"ur Dyskalkulie}{}{DUDEN Institut, Leipzig}{}{}
+\cventry{2006--2010}{Ehrenamtliche Arbeit}{}{Kinderhospiz B\"arenherz, Leipzig/Markkleeberg}{}{Familienbegleitung}
+
+
+%% \nopagebreak
+
+\section{Computer skills (Auswahl)}
+\subsection{Expert knowledge}
+\cvcomputer{\textbf{Sprachen}}{R}{\textbf{data bases}}{Postgres, Mysql, Oracle}
+\cvcomputer{\textbf{anderes}}{RedCap (Studiensoftware), Datenanalyse}{OS}{Linux (Ubuntu, Debian)}
+\subsection{Intermediate knowledge}
+\cvcomputer{\textbf{OS}}{Windows, Linux (Ubuntu, Debian)}{\textbf{Sprachen}}{Perl, Ruby, ABAP}
+\cvcomputer{\textbf{anderes}}{Mathematica, SAP, emacs, {{\LaTeX}}, Stata}{}{}
+\subsection{Basic knowledge}
+\cvcomputer{\textbf{Sprachen}}{VB, python, C, batch, html, xml, Lua, Julia}{\textbf{others}}{SPSS, SAS, Symantec, AI, Docker, LimeSurvey}
+
+
+\section{Fort- und Weiterbildungen}
+\cventry{Kurs}{Statistical Analysis with R}{\newline{}Linuxhotel, Pablo E. Verde}{Essen}{eine Woche, M\"arz 2011}{\href{www.linuxhotel.de/kurs/R-statistik/}{www.linuxhotel.de/kurs/R-statistik/}}
+\cventry{Kurs}{Statistical Practice in Epidemiology using R}{\newline{}\href{www.iarc.fr}{IARC}}{Lyon, Frankreich}{eine Woche, September 2011}{\href{http://192.38.117.59/~bxc/SPE/}{http://192.38.117.59/~bxc/SPE/}}
+\cventry{Kurs}{Basic Gene Mapping}{\newline{}Max Delbr\"uck Center for Molecular Medicine}{Berlin}{eine Woche, November 2011}{\href{http://linkage.rockefeller.edu/suzanne/Berlin_Basic_Gene_Mapping_Course_2011.htm}{http://linkage.rockefeller.edu/suzanne/Berlin\_Basic\_Gene\_Mapping\_Course\_2011.htm}}
+\cventry{Kurs}{EMBL Advanced Course, R Programming and Development}{\newline{}\href{http://www.embl.de}{embl}}{Heidelberg}{two days, November 2011}{\href{http://www.embl.de/training/events/2011/RPD11-01/programme/}{http://www.embl.de/training/events/2011/RPD11-01/programme/}}
+\cventry{Kurs}{Introduction to Databases}{\newline{}Prof. Jennifer Widom (Stanford)}{online course}{10-12/2011}{\href{www.db-class.org}{www.db-class.org}}
+\cventry{Kurs}{Introduction to Artificial
+  Intelligence}{\newline{}Prof. Sebastian Thrun \& Prof. Peter Norvig
+  (Stanford)}{online
+  course}{10-12/2011}{\href{www.ai-class.com}{www.ai-class.com}}
+\cventry{Kurs}{Computational Statistics for Genome
+  Biology}{\newline{}Vincent Carey (Harvard), Robert Gentleman
+  (Genentech) (u.a.)}{Brixen, Italy}{6 days, July 2012}{\href{http://marray.economia.unimi.it/2012/}{http://marray.economia.unimi.it/2012/}}
+\cventry{Kurs}{Computing for Data Analysis}{\newline{}Roger D. Peng, Johns Hopkins Bloomberg School of Public Health}{online via Coursera}{09-11/2012}{\href{http://www.coursera.org}{http://www.coursera.org}}
+\cventry{Kurs}{Biostatistical Boot Camp}{\newline{}Brian Caffo, Johns Hopkins Bloomberg School of Public Health}{online via Coursera}{09-12/2012}{\href{http://www.coursera.org}{http://www.coursera.org}}
+\cventry{Kurs}{Software as a Service}{\newline{}Armando Fox \& David Patterson, UC Berkley}{online via edX}{10-11/2012}{\href{http://www.edx.org}{http://www.edx.org}}
+\cventry{Kurs}{Quantitative Methods in Clinical Public Health Research (Stata)}{\newline{}Marcello Pagano \& Francis Cook, Harvard University}{online via edX}{10/2012-01/2013}{\href{http://www.edx.org}{http://www.edx.org}}
+\cventry{Kurs}{Introduction to CS and Programming (Python)}{\newline{}Eric Crimson \& John Guttag, MIT}{online via edX}{09/2012-01/2013}{\href{http://www.edx.org}{http://www.edx.org}}
+\cventry{Kurs}{Generalized Linear Models (Stata)}{\newline{}James Hardin \& Joseph Hilbe}{online via statistics.com}{04/2013-05/2013}{\href{http://www.statistics.com}{http://www.statistics.com}}
+\cventry{Kurs}{Computational Molecular Evolution}{\newline{}Anders Gorm Pedersen,Technical University of Denmark}{online via Coursera}{06/2013-07/2013}{\href{http://www.coursera.org}{http://www.coursera.org}}
+\cventry{Kurs}{Epigenetic Control of Gene Expression }{\newline{}Marnie Blewitt, University of Melbourne}{online via Coursera}{07/2013-08/2013}{\href{http://www.coursera.org}{http://www.coursera.org}}
+\cventry{Kurs}{3rd Sardinian Summer School Genomic Analysis of Complex and Monogenic Disorders}{\newline{}Goncalo Abecasis (University of Michigan), David Schlessinger
+  (NIH) (amongst others)}{Pula, Italien}{6 days, September 2013}{\href{http://www.crs4.it/sc2013}{http://www.crs4.it/sc2013}}
+
+\cventry{Kurs}{Introduction to Biology}{\newline{}Eric Lander, MIT}{online via Edx}{since 09/2013-01/2014}{\href{http://www.edx.org}{http://www.edx.org}}
+%\cventry{Kurs}{A Global History of Architecture}{\newline{}Mark Jarzombek, MIT}{online via Edc}{seit 09/2013}{\href{http://www.edx.org}{http://www.org.org}}
+\cventry{Kurs}{R Graphics}{\newline{}Paul Murrell (University of Auckland, R Core Team)}{online via statistics.com}{10/2013-11/2013}{\href{http://www.statistics.com}{http://www.statistics.com}}
+\cventry{Kurs}{ML Estimation}{\newline{}Kuber Deokar}{online via statistics.com}{11/2013-12/2013}{\href{http://www.statistics.com}{http://www.statistics.com}}
+\cventry{Kurs}{Spatial Analysis Techniques in R}{\newline{}David Unwin (Univ. of London (emeritus))}{online via statistics.com}{12/2013-01/2014}{\href{http://www.statistics.com}{http://www.statistics.com}}
+\cventry{Kurs}{Introduction to Bayesian Computing \& Techniques}{\newline{}Peter Congdon (University of London)}{online via statistics.com}{03/2014-04/2014}{\href{http://www.statistics.com}{http://www.statistics.com}}
+\cventry{Kurs}{Bayesian Statistics in R \& JAGS}{\newline{}Peter Congdon (University of London)}{online via statistics.com}{04/2014-05/2014}{\href{http://www.statistics.com}{http://www.statistics.com}}
+\cventry{Kurs}{Bayesian Regression Modeling via MCMC Techniques}{\newline{}Peter Congdon (University of London)}{online via statistics.com}{05/2014-06/2014}{\href{http://www.statistics.com}{http://www.statistics.com}}
+\cventry{Kurs}{Data Mining with R}{\newline{}Luis Torgo (University of Porto)}{online via statistics.com}{06/2014-07/2014}{\href{http://www.statistics.com}{http://www.statistics.com}}
+\cventry{Kurs}{Biostatistics 1/2}{\newline{}Abhaya Indrayan (University of Delhi)}{online via statistics.com}{08/2014-10/2014}{\href{http://www.statistics.com}{http://www.statistics.com}}
+\cventry{Kurs}{Power Size and Power Determination}{\newline{}Thomas P. Ryan}{online via statistics.com}{11/2014-12/2014}{\href{http://www.statistics.com}{http://www.statistics.com}}
+\cventry{Kurs}{Introduction to Statistical Issues in Clinical Trials}{\newline{}Vidyadhar Phadke \& Nand Rawat}{online via statistics.com}{12/2014-01/2015}{\href{http://www.statistics.com}{http://www.statistics.com}}
+\cventry{Kurs}{Advanced course: R programming and development}{\newline{}Laurent Gatto \& Robert Stojnic}{EMBL Heidelberg}{15-16/01/2015}{\href{http://www.www.dataprogrammers.net}{http://www.dataprogrammers.net}}
+
+
+
+\section{Sprachen}
+\cvline{Deutsch}{Muttersprache}
+\cvline{Englisch}{Flie\ss{}end in Wort und Schrift}
+\cvline{Franz\"osisch}{Referenzniveau B1}
+\cvline{andere}{Latein, Altgriechisch}
+
+
+%% \section{Gremienarbeit w\"ahrend des Studiums}
+%% \cvlistitem{Senat der Universit\"at Leipzig, 2003/2004}
+%% \cvlistitem{Kommission f\"ur Lehrerbildung an der Universit\"at Leipzig am Prorektorat f\"ur Lehre und Studium, 2002-2004}
+%% \cvlistitem{Fakult\"atsrat, Fakult\"at f\"ur Mathematik und Informatik, 2002-2004}
+%% \cvlistitem{Fachschaftsrat, Fakult\"at f\"ur Mathematik und Informatik, 2001-2004}
+%% \cvlistitem{StuRa (LehramtsAG), Universit\"at Leipzig, 2002-2006}        
+% optional other symbol
+
+% \renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5 \cite{book1}}
+% \cvlistdoubleitem{Item 3}{}
+
+% % Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+%% Publications from a BibTeX file using the multibib package
+\section{Publikationen}
+\cventry{Artikel}{Association between IgE-mediated allergies and diabetes mellitus type 1 in children and adolescents}{\newline{}Klamt S, Vogel M, Kapellen T, Hiemisch A, Prenzel F, Zachariae S, Ceglarek U, Thiery J, Kiess W}{\newline{}Pediatric Diabetes}{in revision}{}
+\cventry{Artikel}{Clinical and biochemical consequences of an intragenic growth hormone receptor (GHR) deletion in a large Chinese pedigree}{\newline{}Klammt J, Shen S, Kiess W, Kratzsch J, Stobbe H, Vogel M, Luo F, Pf\"affle R}{\newline{}Clinical Endocrinology}{2014 Oct 20}{}
+\cventry{Artikel}{Clinical evidence-based cutoff limits for GH stimulation tests in children with a backup of results with reference to mass spectrometry}{\newline{}Wagner I, Paetzold C, Gausche R, Vogel M, Koerner A, et al.}{\newline{}European Journal of Endocrinology}{2014 Jun 24}{}
+\cventry{Artikel}{Is there excessive weight gain prior to diagnosis leading to earlier onset of diabetes in childhood}{\newline{}Kuchlbauer V, Vogel M, Gausche R, Kapellen T, Rothe U, Vogel C, Pf\"affle R, Kiess W}{\newline{}Pediatric Diabetes}{2013 Dec}{}
+\cventry{Artikel}{Blood pressure tracking in children and adolescents}{\newline{}Miersch A, Vogel M, Gausche R, Siekmeyer W, Pf\"affle R, Dittrich K, Kiess W.}{\newline{}Pediatr Nephrol.}{2013 Aug 20}{}
+\cventry{Artikel}{Influence of seasonal variation on blood pressure measurements in children, adolescents and young adults}{\newline{}Miersch A, Vogel M, Gausche R, Siekmeyer W, Pf\"affle R, Dittrich K, Kiess W.}{\newline{}Pediatr Nephrol.}{2013 Jul 19}{}
+\cventry{Buchkapitel}{Translating Science into Practice: What are the Needs of People with Obesity and/or Diabetes}{\newline{}Kiess W, Herget S, Markert J, Hiemisch A, Naumann S, Neef M, Gausche R, Vogel M, K\"orner A, Pf\"affle R}{\newline{}in: Srivastava et al, Lost in Translation}{}{}
+\cventry{Tagungs\-beitrag}{Standard Deviation Scores in Data Quality Control of Age-depend Measurement Values}{\newline{}Vogel M, Kirsten T, Naumann S, Kiess W}{\newline{}GMDS Jahrestagung 2014}{}{}
+
+
+
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
